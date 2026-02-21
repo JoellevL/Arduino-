@@ -1,0 +1,31 @@
+#define Groeneled 2
+#define Geleled 10
+
+void setup() {
+// initialize digital pin LED as an output.
+  pinMode(Groeneled, OUTPUT);
+  pinMode(Geleled, OUTPUT);
+}
+
+// the loop function 
+void loop() {
+  // Geleled en Groeneled gelijk aan
+  digitalWrite(Groeneled, HIGH);    // turn the LED on (HIGH is the voltage level)
+  digitalWrite(Geleled, HIGH);      // turn the LED on (HIGH is the voltage level)
+  delay(2000);                      // wait 
+  digitalWrite(Groeneled, LOW);     // turn the LED off by making the voltage LOW
+  digitalWrite(Geleled, LOW);       // turn the LED off by making the voltage LOW
+  delay(2000);                      // wait 
+
+//Groeneled aan
+  digitalWrite(Groeneled, HIGH);    // turn the LED on (HIGH is the voltage level) 
+  delay(2000);                      // wait 
+  digitalWrite(Groeneled, LOW);     // turn the LED off by making the voltage LOW 
+  delay(2000);                      // wait 
+
+//Geleled aan
+  digitalWrite(Geleled, HIGH);      // turn the LED on (HIGH is the voltage level) 
+  delay(2000);                      // wait 
+  digitalWrite(Geleled, LOW);       // turn the LED off by making the voltage LOW 
+  delay(2000);                      // wait 
+}
